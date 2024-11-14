@@ -15,7 +15,7 @@ const App = ()=>{
 
   const fetchReviews = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/reviews');
+      const response = await axios.get('https://bookreview-backend-hzf3.onrender.com/api/reviews');
       setReviews(response.data);
     } catch (error) {
       console.error("Failed to fetch reviews:", error);
@@ -24,7 +24,7 @@ const App = ()=>{
 
   const handleAddReview = async (newReview) => {
     try {
-      const response = await axios.post('http://localhost:5000/api/reviews', newReview);
+      const response = await axios.post('https://bookreview-backend-hzf3.onrender.com/api/reviews', newReview);
       setReviews([...reviews, response.data]);
     } catch (error) {
       console.error("Failed to add review:", error);
@@ -33,7 +33,7 @@ const App = ()=>{
 
   const handleDeleteReview = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/reviews/${id}`);
+      await axios.delete(`https://bookreview-backend-hzf3.onrender.com/api/reviews/${id}`);
       setReviews(reviews.filter((review) => review._id !== id));
     } catch (error) {
       console.error("Failed to delete review:", error);
