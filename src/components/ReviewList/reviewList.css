@@ -1,0 +1,102 @@
+/* ReviewList.css */
+
+/* Main review list container */
+.review-list-container {
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  /* Individual review item */
+  .review-item {
+    padding: 16px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .review-item:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Book title styling */
+  .review-item h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 0;
+    font-weight: 600;
+  }
+  
+  /* Author styling */
+  .review-item .author {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+    font-style: italic;
+  }
+  
+  /* Review content styling */
+  .review-item .review-content {
+    font-size: 16px;
+    color: #444;
+    margin-top: 10px;
+  }
+  
+  /* Reviewer name styling */
+  .review-item .reviewer-name {
+    font-size: 14px;
+    color: #777;
+    margin-top: 8px;
+    font-style: italic;
+  }
+  
+  /* Rating styling */
+  .review-item .rating {
+    font-size: 14px;
+    color: #ffb400;
+    margin-top: 5px;
+  }
+  
+  /* Delete button styling */
+  .review-item .delete-btn {
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .review-item .delete-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Responsive styling for smaller screens */
+  @media (max-width: 600px) {
+    .review-item h3 {
+      font-size: 18px;
+    }
+  
+    .review-item .review-content {
+      font-size: 14px;
+    }
+  
+    .review-item .delete-btn {
+      font-size: 12px;
+      padding: 6px 10px;
+    }
+  }
+  
